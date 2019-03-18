@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <fragment
+        android:id="@+id/country_list_fragment"
+        android:name="com.example.fragment.CountryListFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <FrameLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dynamic_fragment_frame_layout"/>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_add_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/btn_replace_fragment"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="@string/replace" />
+
+    <Button
+        android:id="@+id/btn_hide_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hide" />
+
+    <Button
+        android:id="@+id/btn_show_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_remove_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove" />
+
+        <Button
+            android:id="@+id/btn_dialog_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dialog frag" />
+
+        <Button
+            android:id="@+id/btn_preference_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="preference frag" />
+    </LinearLayout>
+
+</LinearLayout>
